@@ -1,8 +1,53 @@
-/*
-Colors:
+:root {
+  --text-color: #1a1a1a;
+  --green-color: #00b172;
+  --white-color: #fff;
+  --font-main: sans-serif;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-*/
+html,
+body {
+  width: 100%;
+  font-family: var(--font-main);
+  background-color: var(--white-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  margin-inline: 2rem;
+  border: 1px solid red;
+}
+
+.logo {
+}
+
+.logo img {
+  width: 200px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
